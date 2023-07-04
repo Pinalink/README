@@ -1,5 +1,5 @@
 # README
-##How I tune my parameters to optimize the neural network engine.
+## How I tuned my parameters to optimize the neural network engine.
 
   I tried using different filters for both 2D convolutions(1st conv, 2nd conv). Among the combination of (1st conv, 2nd conv) = (relu,relu)(giving accuracy=97.20%), (relu,tanh)(giving accuracy=5.37%), (sigmoid,relu)(giving accuracy=98.82%) and (sigmoid,tanh)(giving accuracy=99.16%). Interestingly (sigmoid,tanh) gave the best accuracy among these four combinations at 99.16% while (relu,tanh) astonishingly gave the worst result at an accuracy of 5.37%, a very bad result.
   Next I tried the filte size from (1st conv, 2nd conv)=(3*3, 5*5) (giving accuracy=99.16%) to (5*5, 3*3) (giving accuracy=97.59%).
